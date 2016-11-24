@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Ride, :type => :model do
   let(:attraction) {
-    Attraction.create(
+    Attraction.create( #belongs to attr, belongs to user
       :name => "Roller Coaster",
       :tickets => 5,
       :nausea_rating => 2,

@@ -12,7 +12,7 @@ RSpec.describe User, :type => :model do
     )
   }
 
-  let(:admin) {
+  let(:admin) { #model after this instance, has many rides, has many attractions through rides
     User.create(
       :name => "Walt",
       :password => "password",
