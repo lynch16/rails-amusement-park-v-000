@@ -31,7 +31,7 @@ module LoginHelper
     )
     fill_in("user[name]", :with => "Mindy")
     fill_in("user[password]", :with => "password")
-    click_button('Sign In')
+    click_button('Sign in')
   end
 
   def admin_signup
@@ -57,7 +57,7 @@ module LoginHelper
     )
     fill_in("user[name]", :with => "Walt Disney")
     fill_in("user[password]", :with => "password")
-    click_button('Sign In')
+    click_button('Sign in')
   end
 
 end

@@ -6,10 +6,12 @@ class User < ActiveRecord::Base
    has_secure_password
 
    def mood
-     if happiness > nausea
-       'happy'
-     else
-       'sad'
+     if !!happiness && !!nausea
+       if happiness > nausea
+         'happy'
+       else
+         'sad'
+       end
      end
    end
 end
